@@ -581,6 +581,13 @@ footer{
 }
 footer p {
     padding-top: 10px;
+
+}
+footer a{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
 }
 
 
