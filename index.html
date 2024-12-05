@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Sunflower systems</title>
+</head>
+<body>
+<header>
+    <nav>
+        <div id="company">
+            <div id="logo">
+                <a href="index.html"><img src="images/company_logo.png" alt="Sunflower systems logo společnosti"></a>
+            </div>
+        </div>
+    
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        
+        <div id="menu">
+            <ul>
+                <li><a href="advantages.html">Výhody</a></li>
+                <li><a href="offers.html">Nabídky</a></li>
+                <li><a href="about_us.html">O nás</a></li>
+                <li><a href="contact_us.html">Kontakt</a></li>
+                <li><a href="projects.html">Hotové projekty</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+<div id="hero">
+    <div class="overlay"><img src="images/solar_plant_02.jpg" alt="Obrázek fotovoltaické elektrárny pro pozadí stránky"></div>
+    <div class="introduction">
+        <h1 style="font-family: 'Bukhari Script'; font-weight: lighter;">Sunflower Systems</h1>
+        <h2 style="font-family: 'Bukhari Script'; font-weight: lighter;">Photovoltaic systems for everybody</h2>
+    </div>
+</div>
+
+<div id="main-content">
+    <h2>O společnosti Sunflower Systems</h2>
+    <section id="basic-info">
+        <br>
+        <p><i><strong>Sunflower Systems je inovativní společnost, která se specializuje na navrhování, instalaci a správu moderních fotovoltaických elektráren. Naším cílem je přinést chytrá a ekologická řešení pro domácnosti i firmy, které chtějí snížit své náklady na energie a přispět k ochraně životního prostředí.</strong></i></p>
+    </section>
+
+    <h2>Co můžete očekávat</h2>
+    <section class="basic-info-container">
+
+        <div class="box">
+            <img src="images/solar_plant.jpg" alt="Fotovoltaická elektrárna v provozu">
+        </div>
+        <div class="box">
+            <p>Naše řešení zahrnují nejen kvalitní instalaci fotovoltaických panelů, ale také komplexní poradenství a individuální přístup. Společně najdeme to nejlepší řešení, které odpovídá vašim energetickým potřebám a možnostem.</p>
+        </div>
+    
+        <div class="box">
+            <p>Díky našim zkušenostem v oblasti obnovitelných zdrojů energie a využití nejnovějších technologií jsme schopni garantovat vysokou efektivitu a dlouhou životnost našich systémů. Pomáháme našim zákazníkům nejen ušetřit, ale také investovat do udržitelné budoucnosti.</p>
+        </div>
+        <div class="box">
+            <img src="images/solar_plant.jpg" alt="Detailní pohled na solární panely">
+        </div>
+    
+        <div class="box">
+            <img src="images/solar_plant.jpg" alt="Instalace fotovoltaických panelů">
+        </div>
+        <div class="box">
+            <p>Chcete se dozvědět více? Kontaktujte nás a zjistěte, jak vám naše řešení mohou pomoci. Sunflower Systems – váš partner pro chytrou energetiku a udržitelné zdroje energie.</p>
+        </div>
+    </section>
+    
+    
+    <section id="contact-us-form">
+        <div class="contact-us-container">
+            <div class="text">
+                Kontaktujte nás
+            </div>
+            <form action="#">
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" required id="name">
+                        <div class="underline"></div>
+                        <label for="name">Jméno</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="email" required id="email">
+                        <div class="underline"></div>
+                        <label for="email">E-mail</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="date" required id="date">
+                        <div class="underline"></div>
+                        <label for="date">Datum narození</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="number" min="0" step="1" oninput="validity.valid||(value='');" required id="age">
+                        <div class="underline"></div>
+                        <label for="age">Věk</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-data">
+                        <select id="options" required>
+                            <option value="" disabled selected></option>
+                            <option value="RD">Rodinný dům</option>
+                            <option value="F">Firma</option>
+                            <option value="BD">Bytový dům</option>
+                            <option value="O">Obec</option>
+                        </select>
+                        <div class="underline"></div>
+                        <label for="options">Vyberte možnost</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-data textarea">
+                        <textarea rows="8" cols="80" required id="text" name="text"></textarea>
+                        <br />
+                        <div class="underline"></div>
+                        <label for="text">Napište nám zprávu</label>
+                        <br />
+                    </div>
+                </div>
+                <div class="form-row submit-btn">
+                    <div class="input-data">
+                        <div class="inner"></div>
+                        <input type="submit" value="Odeslat">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>    
+    <table border="1">
+        <caption>Naše služby a možnosti instalace FVE</caption>
+        <thead>
+          <tr>
+            <th>Typ služby</th>
+            <th>Popis</th>
+            <th>Cena (Kč)</th>
+            <th>Vhodné pro</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kompletní instalace</td>
+            <td>Instalace fotovoltaické elektrárny na klíč, včetně všech potřebných komponent (panely, střídače, kabeláž).</td>
+            <td>150 000 - 350 000</td>
+            <td>Rodinné domy, firmy, průmyslové objekty</td>
+          </tr>
+          <tr>
+            <td>Poradenství a návrh</td>
+            <td>Vypracování individuálního návrhu fotovoltaického systému dle potřeb zákazníka.</td>
+            <td>Zdarma</td>
+            <td>Pro všechny zájemce o FVE, kteří chtějí začít</td>
+          </tr>
+          <tr>
+            <td>Instalace na střechy</td>
+            <td>Instalace FVE přímo na střešní plochu budovy, optimalizováno pro maximální výkon.</td>
+            <td>100 000 - 250 000</td>
+            <td>Rodinné domy, chaty, komerční budovy</td>
+          </tr>
+          <tr>
+            <td>Servis a údržba</td>
+            <td>Pravidelná údržba a kontrola solárního systému, čištění panelů, diagnostika poruch.</td>
+            <td>5 000 / rok</td>
+            <td>Pro majitele FVE, kteří chtějí udržet svůj systém v perfektní kondici</td>
+          </tr>
+          <tr>
+            <td>Ekologické poradenství</td>
+            <td>Rady ohledně využívání obnovitelných zdrojů energie, podpora při získávání dotací.</td>
+            <td>2 000 - 5 000</td>
+            <td>Majitelé domů, kteří chtějí zlepšit ekologický dopad</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<footer>
+    <p>
+        ©Sunflower.cz - Fotovoltaické elektrárny pro všechny. <br>
+        poslední aktualizace - 06.12.2024 <br>
+        kontaktní email - gianninom@seznam.cz <br>
+    </p>
+</footer>
+</body>
+</html>
